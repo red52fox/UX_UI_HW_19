@@ -1,0 +1,206 @@
+.navigation {
+    background-color: #fff;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    color: #373A57
+}
+.inline-block {
+    background-color: fff;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: none;
+}
+.logo {
+    
+    width: 20%;
+    padding: 1%;
+    text-align: center;
+    }
+nav {
+    width: 72%;
+    padding: 1%;
+    text-align: right;
+    background-color: #fff;
+}
+ul {
+    width: 50%;
+    margin-left: auto;
+}
+li {
+    padding-left:20px;
+    padding-right: 30px;
+}
+.heroTxt {
+    background-color: #fff;
+    width: 78%;
+    margin-left: 10%;
+    margin-top: 56px;
+    color: #373A57
+}
+.hero_p {
+    text-align: left;
+    font-size: 30px;
+    font-family: Montserrat;
+    
+}
+.hero_h1 {
+    font-size: 90px;
+    font-family: PeachyKeenJF;
+}
+.scroll {
+    padding: 5%;
+}
+section .heroImg {
+    height: 600px;
+    padding: 25px;
+    }
+.content {
+    display:flex;
+    flex-direction: row;
+    width: 900px;
+    margin: 0 auto;
+}
+.dumbPic {
+    padding-right: 65px;
+}
+.resumeButton {
+    background-color: #373A57;
+    border-radius: 30px;
+    margin-left: 875px;
+    padding: 15px;
+    color: white;
+    font-family: Montserrat;
+}
+footer {
+    background-color: #fff;
+    padding: 1%;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: Montserrat;
+}
+ul {
+    display: inline-block;
+    vertical-align: top;
+    padding: 1%;
+}
+.flexContainer {
+    display:flex;
+    flex-direction: row;
+}
+.skillItems {
+    text-align: center;
+    justify-content: space-around;
+}
+h2 {
+    font-size: 30px;
+    font-family: PeachyKeenJF;
+    margin: 75px
+}
+p { 
+    font-family: Montserrat;
+    font-size: 18px;
+}
+h3 {
+    font-size: 24px;
+    font-family: Montserrat;
+}
+.allProjects {
+    text-align: center;
+    border-style: solid;
+    border-color: #373A57;
+    border-radius: 30px;
+    padding: 15px;
+    width: 350px;
+    margin: auto;
+    margin-top: 20px;
+}
+.workGrid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 45% 55%;
+    grid-template-areas: "case1_image case1_text"
+    "case2_image case2_text"
+    "case3_image case3_text";
+    background-color: #828282;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 30px;
+    color: #000
+    }
+.workGrid img {
+    width: 350px;
+    border-radius: 30px;
+}
+.case1_image {
+    grid-area: case1_image;
+    padding: 20px;
+    justify-self: center;
+    align-self: center;
+}
+.case2_image {
+    grid-area: case2_image;
+    padding: 20px;
+    justify-self: center;
+    align-self: center;
+}
+.case3_image {
+    grid-area: case3_image;
+    padding: 20px;
+    justify-self: center;
+    align-self: center;
+}
+.case1_text {
+    grid-area: case1_text;
+    align-self: center;
+}
+.case2_text {
+    grid-area: case2_text;
+    align-self: center;
+}
+.case3_text {
+    grid-area: case3_text;
+    align-self: center;
+}
+.workGrid button {
+    background-color: #373A57;
+    border-radius: 30px;
+    padding: 15px;
+    color: white;
+    font-family: Montserrat;
+}
+@media only screen and (max-width: 600px){
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .skillItems {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .workGrid {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "case1_image"
+        "case1_text"
+        "case2_image" 
+        "case2_text"
+        "case3_image" 
+        "case3_text";
+        background-color: #828282;
+        width: fit-content;
+        height: fit-content;
+        margin: 0 auto;
+        padding: 15px;
+        border-radius: 30px;
+        color: #000;
+       text-align: center;
+        }
+        
+}
