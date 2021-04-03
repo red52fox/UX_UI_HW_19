@@ -31,26 +31,75 @@ li {
     padding-left:20px;
     padding-right: 30px;
 }
-.heroTxt {
-    background-color: #fff;
-    width: 78%;
-    margin-left: 10%;
-    margin-top: 56px;
-    color: #373A57
+/* Grid CSS */
+#heroGrid {
+    background-color: #ff6200;
+    margin: 0px 5%;
+    display: grid;
+    min-height: 500px;
+    height: 70vh;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 70% 30%;
+    grid-template-areas: 
+      "featuredProduct secondaryProduct"
+      "CTA secondaryProduct";
 }
-.hero_p {
-    text-align: left;
-    font-size: 30px;
-    font-family: Montserrat;
-    
+  #featuredProduct {
+      display: block;
+    grid-area: featuredProduct;
+    background-image: url("../images/furniture1.png");
+  }
+  #secondaryProduct {
+    grid-area: secondaryProduct;
 }
-.hero_h1 {
-    font-size: 90px;
-    font-family: PeachyKeenJF;
+#CTA {
+    grid-area: CTA;
+    align-content: flex-start;
+    justify-content: start;
+    cursor: pointer;
+  }
+.CTA-button {
+    width: 215px;
+  height: 58px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  margin: 0px 60px 0 1px;
+  padding: 1.5px 1.5px;
+  border-radius: 9px;
+  -webkit-backdrop-filter: blur(42px);
+  backdrop-filter: blur(42px);
+  border-style: solid;
+  border-width: 1.5px;
+  border-image-source: radial-gradient(circle at 0 0, #e64467, rgba(255, 255, 255, 0));
+  border-image-slice: 1;
+  background-image: radial-gradient(circle at 0 0, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0)), radial-gradient(circle at 0 0, rgba(230, 68, 103, 0.4), rgba(230, 68, 103, 0)), radial-gradient(circle at 0 0, rgba(255, 114, 11, 0.4), rgba(255, 114, 11, 0)), linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), radial-gradient(circle at 0 0, #e64467, rgba(255, 255, 255, 0));
+  background-origin: border-box;
+  background-clip: content-box, content-box, content-box, content-box, border-box;
 }
-.scroll {
-    padding: 5%;
-}
+  .heroGridArea {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position: relative;
+  }
+  #headline {
+    border-bottom: 5px solid #ff6200;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    z-index: 100;
+    padding: 0%
+  }
+  lottie-player {
+      transform: rotate(-90deg);
+      margin-top: 90px;
+  }
+
 section .heroImg {
     height: 600px;
     padding: 25px;
@@ -92,10 +141,15 @@ ul {
     text-align: center;
     justify-content: space-around;
 }
+h1 {
+    font-size: 60px;
+    font-family: PeachyKeenJF;
+    margin: 75px, 0px, 75px,0px;
+}
 h2 {
     font-size: 30px;
     font-family: PeachyKeenJF;
-    margin: 75px
+    margin: 75px, 0px, 75px,0px;
 }
 p { 
     font-family: Montserrat;
